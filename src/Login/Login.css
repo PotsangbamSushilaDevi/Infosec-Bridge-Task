@@ -1,0 +1,147 @@
+.img {
+  margin-top: 56px;
+  width: 198px;
+  height: 198px;
+}
+.text1 {
+  margin-top: 25px;
+  margin-left: 56px;
+  margin-right: 56px;
+  width: 318px;
+  height: 52px;
+}
+.text2 {
+  text-align: center;
+  font-size: 14px;
+  color: #1a1a1a;
+}
+.box {
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.tab-list {
+  margin: 20px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  position: relative;
+}
+
+.tab-list::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  background-color: #e70b89;
+  transition: 0.3s;
+}
+
+.tab-item {
+  flex: 1;
+  text-align: center;
+  transition: 0.3s;
+  opacity: 0.5;
+}
+
+.tab-toggle {
+  display: none;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-toggle:nth-child(1):checked ~ .tab-list .tab-item:nth-child(1),
+.tab-toggle:nth-child(2):checked ~ .tab-list .tab-item:nth-child(2) {
+  opacity: 1;
+}
+
+.tab-toggle:nth-child(2):checked ~ .tab-list::before {
+  transform: translateX(100%);
+}
+
+.tab-toggle:nth-child(1):checked ~ .tab-container .tab-content:nth-child(1),
+.tab-toggle:nth-child(2):checked ~ .tab-container .tab-content:nth-child(2) {
+  display: block;
+}
+
+.tab-trigger {
+  font-weight: bold;
+  font-size: 17px;
+  display: block;
+  padding: 10px 0;
+}
+
+.tab-container {
+  padding: 15px 30px;
+}
+
+.Login-form {
+  padding-bottom: 30px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Login {
+  margin-bottom: 30px;
+  width: 300px;
+  height: 50px;
+  border: 1px solid #1a1a1a;
+  border-radius: 26px;
+  text-align: center;
+  font: normal normal normal 16px/17px Roboto;
+  letter-spacing: 0px;
+  color: #1a1a1a;
+  opacity: 0.56;
+}
+.Password {
+  margin-bottom: 30px;
+  width: 300px;
+  height: 50px;
+  border: 1px solid #1a1a1a;
+  border-radius: 26px;
+  text-align: center;
+  font: normal normal normal 16px/17px Roboto;
+  letter-spacing: 0px;
+  color: #1a1a1a;
+  opacity: 0.56;
+}
+.btn {
+  width: 300px;
+  height: 50px;
+  margin-top: 20px;
+  background: #e70b89 0% 0% no-repeat padding-box;
+  border-radius: 26px;
+  text-align: center;
+  font: normal normal bold 16px/17px Roboto;
+  letter-spacing: 0px;
+  color: #ffffff;
+  border: none;
+}
+.pass {
+  margin-left: 130px;
+  color: #e70b89;
+}
+.login-1 {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 10%;
+  border-radius: 1em;
+  cursor: pointer;
+}
+
+.logos {
+  width: 20px;
+  border: 1px solid #e6e6e6;
+  border-radius: 50%;
+  background-color: #ffffff 0% 0% no-repeat padding-box;
+  padding: 5px;
+}
+.create {
+  color: #e70b89;
+}
